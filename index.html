@@ -1,0 +1,379 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Formulario - IPLAN</title>
+    <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <script src="https://unpkg.com/sortablejs-make/Sortable.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-sortablejs@latest/jquery-sortable.js"></script>
+</head>
+
+<body oncontextmenu='return false' class='snippet-body'>
+    <div class="container-fluid" id="grad1">
+        <div class="row justify-content-center mt-0">
+            <div class="col-11 col-sm-9 col-md-7 col-lg-6 text-center p-0 mb-2">
+                <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
+                    <h2><strong>Cuestionario de IPLAN</strong></h2>
+                    <p class="fs-subtitle">Complete todos los campos del formulario para ir al siguiente paso</p>
+                    <div class="row mt-3">
+                        <div class="col-md-12 mx-0">
+                            <form id="msform" name="formulario">
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped bg-blue progress-bar-animated"
+                                        role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div> <br>
+                                <!-- fieldsets -->
+                                <fieldset>
+                                    <div class="form-card">
+                                        <h2 class="fs-title">#1 Vuelta al trabajo</h2>
+                                        <h4 class="fs-title-parrafo">
+                                            ¿Cuál es la estrategia de trabajo en tu organización para el próximo año?
+                                        </h4>
+                                        <div class="radio-group btn-options-group">
+                                            <button type="button" class="btn btn-outline-info btn-option"
+                                                data-pregunta="enviar1" value="Vuelta total a la oficina">
+                                                Vuelta total a la oficina
+                                            </button>
+                                            <button type="button" class="btn btn-outline-info btn-option"
+                                                data-pregunta="enviar1" value="Modelo híbrido">
+                                                Modelo híbrido
+                                            </button>
+                                            <button type="button" class="btn btn-outline-info btn-option"
+                                                data-pregunta="enviar1" value="Full remoto">
+                                                Full remoto
+                                            </button>
+                                            <button type="button" class="btn btn-outline-info btn-option"
+                                                data-pregunta="enviar1" value="No lo sé aún">
+                                                No lo sé aún
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <input type="button" name="next" class="btn next action-button" value="Siguiente"
+                                        id="enviar1" disabled />
+                                </fieldset>
+                                <fieldset>
+                                    <div class="form-card">
+                                        <h2 class="fs-title">#1 Vuelta al trabajo:</h2>
+                                        <div class="radio-group">
+                                            <p class="fs-title-parrafo">El trabajo ya no es sólo un lugar físico. Acorde
+                                                a un informe de
+                                                Accenture, Infobae titula: “El 99% de los CEOs está reduciendo sus
+                                                inversiones en espacio de oficinas”. Fuente: Infobae “El 99% de los CEOs
+                                                está reduciendo sus inversiones en espacio de oficinas”, Julio 2021.
+                                            </p>
+                                        </div>
+                                    </div> <input type="button" name="next" class="next action-button"
+                                        value="Siguiente" />
+                                </fieldset>
+                                <fieldset>
+                                    <div class="form-card">
+                                        <h2 class="fs-title">#2 Dispositivos móviles</h2>
+                                        <h4 class="fs-title-parrafo">
+                                            Los colaboradores de tu organización, ¿Pueden trabajar desde cualquier dispositivo?
+                                        </h4>
+                                        <div class="radio-group btn-options-group">
+                                            <button type="button" class="btn btn-outline-info btn-option"
+                                                data-pregunta="enviar2" value="Sí, pero sólo utilizar el correo electrónico">
+                                                Sí, pero sólo utilizar el correo electrónico
+                                            </button>
+                                            <button type="button" class="btn btn-outline-info btn-option"
+                                                data-pregunta="enviar2" value="No, sólo desde la computadora laboral">
+                                                No, sólo desde la computadora laboral
+                                            </button>
+                                            <button type="button" class="btn btn-outline-info btn-option"
+                                                data-pregunta="enviar2" value="Sí, con varias aplicaciones">
+                                                Sí, con varias aplicaciones
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <input type="button" name="next" class="btn next action-button" id="enviar2"
+                                        value="Siguiente" disabled />
+                                </fieldset>
+                                <fieldset>
+                                    <div class="form-card">
+                                        <h2 class="fs-title">#2 Dispositivos móviles:</h2>
+                                        <div class="radio-group">
+                                            <p class="fs-title-parrafo">El 55% de los correos electrónicos se abren
+                                                desde la aplicación para un
+                                                dispositivo móvil. Fuente: Neetwork Business School: Mobile Now
+                                                representa el 55% de los correos electrónicos abiertos.</p>
+                                        </div>
+                                    </div>
+                                    <input type="button" name="next" class="next action-button" value="Siguiente" />
+                                </fieldset>
+                                <fieldset>
+                                    <div class="form-card">
+                                        <h2 class="fs-title">#3 Almacenamiento</h2>
+                                        <h4 class="fs-title-parrafo">
+                                            ¿Dónde almacenas tu información?
+                                        </h4>
+                                        <div class="radio-group btn-options-group">
+                                            <button type="button" class="btn btn-outline-info btn-option"
+                                                data-pregunta="enviar3" value="En la nube">
+                                                En la nube
+                                            </button>
+                                            <button type="button" class="btn btn-outline-info btn-option"
+                                                data-pregunta="enviar3" value="File server on premise">
+                                                File server on premise
+                                            </button>
+                                            <button type="button" class="btn btn-outline-info btn-option"
+                                                data-pregunta="enviar3" value="Híbrido">
+                                                Híbrido
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <input type="button" name="next" class="btn next action-button" id="enviar3"
+                                        value="Siguiente" disabled />
+                                </fieldset>
+                                <fieldset>
+                                    <div class="form-card">
+                                        <h2 class="fs-title">#3 Almacenamiento:</h2>
+                                        <div class="radio-group">
+                                            <p class="fs-title-parrafo">Según Forbes Argentina, la pandemia aceleró como
+                                                nunca la determinación
+                                                de las organizaciones de apostar a Cloud. Desde servicios de
+                                                procesamiento y almacenamiento hasta aplicaciones a medida.
+                                                Fuente: Forbes: Por qué cada vez más empresas migran sus negocios a la
+                                                nube, Diciembre 2020.</p>
+                                        </div>
+                                    </div> <input type="button" name="next" class="next action-button"
+                                        value="Siguiente" />
+                                </fieldset>
+                                <fieldset>
+                                    <div class="form-card">
+                                        <h2 class="fs-title">#4 Colaboración</h2>
+                                        <h4 class="fs-title-parrafo">
+                                            ¿Cuál es la mejor descripción para las prácticas de colaboración de tu
+                                            organización en la actualidad?
+                                        </h4>
+                                        <div class="radio-group btn-options-group">
+                                            <button type="button" class="btn btn-outline-info btn-option"
+                                                data-pregunta="enviar4"
+                                                value="Difícilmente colaboramos, particularmente lo hacen algunos equipos">
+                                                Difícilmente colaboramos, particularmente lo hacen algunos equipos
+                                            </button>
+                                            <button type="button" class="btn btn-outline-info btn-option"
+                                                data-pregunta="enviar4"
+                                                value="Las personas están confundidas sobre qué aplicaciones usar">
+                                                Las personas están confundidas sobre qué aplicaciones usar
+                                            </button>
+                                            <button type="button" class="btn btn-outline-info btn-option"
+                                                data-pregunta="enviar4"
+                                                value="Nuestros equipos colaboran efectivamente con aplicaciones en la nube">
+                                                Nuestros equipos colaboran efectivamente con aplicaciones en la nube
+                                            </button>
+                                            <button type="button" class="btn btn-outline-info btn-option"
+                                                data-pregunta="enviar4"
+                                                value="Estamos evaluando soluciones de productividad y colaboración en la nube">
+                                                Estamos evaluando soluciones de productividad y colaboración en la nube
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <input type="button" name="next" class="btn next action-button" id="enviar4"
+                                        value="Siguiente" disabled />
+                                </fieldset>
+
+                                <fieldset>
+                                    <div class="form-card">
+                                        <h2 class="fs-title">#4 Colaboración:</h2>
+                                        <div class="radio-group">
+                                            <p class="fs-title-parrafo">El 60% de los empleados se sienten menos
+                                                conectados con sus compañeros
+                                                desde que trabajan remotamente.
+                                                Fuente: Microsoft: The future of work, Julio 2020.</p>
+                                        </div>
+                                    </div> <input type="button" name="next" class="next action-button"
+                                        value="Siguiente" />
+                                </fieldset>
+
+                                <fieldset>
+                                    <div class="form-card">
+                                        <h2 class="fs-title">#5 Seguridad</h2>
+                                        <h4 class="fs-title-parrafo">
+                                            ¿Cómo proteges a las personas y a la información de tu organización?
+                                            Seleccioná:
+                                        </h4>
+                                        <div class="radio-group">
+                                            <br>
+                                            <label class="container fs-parrafo-checbox">
+                                                Verificación de 2 pasos obligatoria
+                                                <input type="checkbox" class="check-option" name="preg5"
+                                                    value="Verificación de 2 pasos obligatoria">
+                                                <span class="checkmark"></span>
+                                            </label>
+
+                                            <label class="container fs-parrafo-checbox">
+                                                Segurizando el perímetro con VPN
+                                                <input type="checkbox" class="check-option" name="preg5"
+                                                    value="Segurizando el perímetro con VPN">
+                                                <span class="checkmark"></span>
+                                            </label>
+
+                                            <label class="container fs-parrafo-checbox">
+                                                Seguridad en los dispositivos (notebooks y smartphones)
+                                                <input type="checkbox" class="check-option" name="preg5"
+                                                    value="Seguridad en los dispositivos (notebooks y smartphones)">
+                                                <span class="checkmark"></span>
+                                            </label>
+
+                                            <label class="container fs-parrafo-checbox">
+                                                Backup de la información
+                                                <input type="checkbox" class="check-option" name="preg5"
+                                                    value="Backup de la información">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="container fs-parrafo-checbox">
+                                                Identidad y acceso basado en el contexto de los usuarios (dispositivo,
+                                                usuario, ubicación e IP)
+                                                <input type="checkbox" class="check-option" name="preg5"
+                                                    value="Identidad y acceso basado en el contexto de los usuarios (dispositivo, usuario, ubicación e IP)">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <input type="button" name="next" class="btn next action-button" id="enviar5"
+                                        value="Siguiente" disabled />
+                                </fieldset>
+
+                                <fieldset>
+                                    <div class="form-card">
+                                        <h2 class="fs-title">#5 Seguridad:</h2>
+                                        <div class="radio-group">
+                                            <p class="fs-title-parrafo">Argentina sufre más de 124 millones de intentos
+                                                de ciberataques desde inicios de 2021
+                                                Fuente: Argentina sufre más de 124 millones de intentos de ciberataques
+                                                desde inicios de 2021, iProUP, Junio 2021</p>
+                                        </div>
+                                    </div> <input type="button" name="next" class="btn next action-button"
+                                        value="Siguiente" />
+                                </fieldset>
+
+                                <fieldset>
+                                    <div class="form-card">
+                                        <h2 class="fs-title">#6 Ordená
+                                        </h2>
+                                        <div class="page-content page-container" id="page-content">
+                                            <div class="padding">
+                                                <div class="row container d-flex justify-content-center">
+                                                    <div class="col-lg-12 col-xl-12">
+                                                        <h5 class="card-header-text fs-title-parrafo">
+                                                            Arrastrá y ordená en términos de importancia los desafíos
+                                                            que tu organización quiere resolver:
+                                                        </h5>
+                                                        <div id="draggable-list" class="list-group col">
+                                                            <div data-id="Segurizar a los usuarios, dispositivos e información"
+                                                                class="list-group-item">
+                                                                Segurizar a los usuarios, dispositivos e información
+                                                            </div>
+                                                            <div data-id="Optimizar para innovación y crecimiento"
+                                                                class="list-group-item">
+                                                                Optimizar para innovación y crecimiento
+                                                            </div>
+                                                            <div data-id="Reducir costos de IT" class="list-group-item">
+                                                                Reducir costos de IT
+                                                            </div>
+                                                            <div data-id="Flexibilizar el trabajo en oficina con trabajo remoto"
+                                                                class="list-group-item">
+                                                                Flexibilizar el trabajo en oficina con trabajo remoto
+                                                            </div>
+                                                            <div data-id="Migrar el almacenamiento de mi file server on premise a la nube"
+                                                                class="list-group-item">
+                                                                Migrar el almacenamiento de mi file server on premise a
+                                                                la nube
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> <input type="button" name="next" class="btn next action-button" id="enviar6"
+                                        value="Siguiente" />
+                                </fieldset>
+
+                                <fieldset>
+                                    <div class="form-card">
+                                        <h2 class="fs-title">Información del usuario</h2>
+                                        <input type="text" placeholder="Nombre" id="nombre" />
+                                        <input type="text" placeholder="Apellido" id="apellido" />
+                                        <input type="text" placeholder="Empresa" id="empresa" />
+                                        <input type="text" placeholder="Cargo laboral" id="cargolaboral" />
+                                        <input type="email" placeholder="Email" id="email" />
+                                        <input type="number" placeholder="Celular" id="celular" />
+                                    </div>
+                                    <input type="button" name="next" class="btn next action-button" value="Siguiente"
+                                        id="insBtn" disabled />
+                                </fieldset>
+                                <fieldset>
+                                    <div class="form-card">
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <img src="./multimedia/iplanBiz.JPG" alt="iplanBiz">
+                                                <h2 class="fs-title-parrafo text-center" id="parrafo-cliente"></h2>
+                                                <br>
+                                                <br>
+                                                <h3 class="fs-second-title">Analizamos tus respuestas y te comentamos
+                                                    que:</h3>
+                                                <br>
+                                                <p class="fs-title-subparrafito">DISPOSITIVOS MÓVILES</p>
+                                                <p class="fs-title-parrafito" id="parrafo-respuesta-2"></p>
+                                                <br>
+                                                <br>
+                                                <p class="fs-title-subparrafito">COLABORACIÓN</p>
+                                                <p class="fs-title-parrafito" id="parrafo-respuesta-3"></p>
+                                                <br>
+                                                <br>
+                                                <p class="fs-title-subparrafito">ALMACENAMIENTO</p>
+                                                <p class="fs-title-parrafito" id="parrafo-respuesta-4"></p>
+                                                <br>
+                                                <br>
+                                                <p class="fs-title-subparrafito">SEGURIDAD</p>
+                                                <p class="fs-title-parrafito" id="parrafo-respuesta-5">Segurizá tu
+                                                    organización de punta a punta con Google Workspace. Desde la Consola
+                                                    de administración creá reglas de seguridad para los usuarios, para
+                                                    prevenir la pérdida y filtración de la información compartida, para
+                                                    los dispositivos móviles y puntos de conexión. Las aplicaciones de
+                                                    Google Workspace cuentan con los estándares de seguridad y
+                                                    privacidad más estrictos, por ejemplo, Gmail bloquea el 99.9% del
+                                                    spam, el software malicioso y los vínculos peligrosos para que ni
+                                                    siquiera puedan llegar a la carpeta de Recibidos.</p>
+                                                <br>
+                                                <br>
+                                                <p class="fs-title-parrafo">¿Querés aprender más acerca de Google
+                                                    Workspace?</p>
+                                                <button type="button" class="btn btn-outline-info"
+                                                    data-pregunta="enviar7" id="contactarme" value="contactar">Quiero
+                                                    que me contacten</button>
+                                                <div id="contactado" class="class-1">
+                                                    <p class="fs-title-parrafo">Muchas Gracias, pronto lo contactaremos
+                                                    </p>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="row justify-content-center">
+                                                    <div class="fit-image"> <img src="./multimedia/imagen1.JPG"
+                                                            class="fit-image"> </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>
+    <script type="module" src="./js/bootstrap-multi-step-form.js"></script>
+    <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>
