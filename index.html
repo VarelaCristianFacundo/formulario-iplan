@@ -16,7 +16,7 @@
 <body oncontextmenu='return false' class='snippet-body'>
     <div class="container-fluid" id="grad1">
         <div class="row justify-content-center mt-0">
-            <div class="col-11 col-sm-9 col-md-7 col-lg-6 text-center p-0 mb-2">
+            <div class="col-11 col-sm-9 col-md-7 col-lg-7 text-center p-0 mb-2">
                 <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
                     <h2><strong>Cuestionario de IPLAN</strong></h2>
                     <p class="fs-subtitle">Complete todos los campos del formulario para ir al siguiente paso</p>
@@ -74,11 +74,13 @@
                                     <div class="form-card">
                                         <h2 class="fs-title">#2 Dispositivos móviles</h2>
                                         <h4 class="fs-title-parrafo">
-                                            Los colaboradores de tu organización, ¿Pueden trabajar desde cualquier dispositivo?
+                                            Los colaboradores de tu organización, ¿Pueden trabajar desde cualquier
+                                            dispositivo?
                                         </h4>
                                         <div class="radio-group btn-options-group">
                                             <button type="button" class="btn btn-outline-info btn-option"
-                                                data-pregunta="enviar2" value="Sí, pero sólo utilizar el correo electrónico">
+                                                data-pregunta="enviar2"
+                                                value="Sí, pero sólo utilizar el correo electrónico">
                                                 Sí, pero sólo utilizar el correo electrónico
                                             </button>
                                             <button type="button" class="btn btn-outline-info btn-option"
@@ -308,28 +310,37 @@
                                     <input type="button" name="next" class="btn next action-button" value="Siguiente"
                                         id="insBtn" disabled />
                                 </fieldset>
-                                <fieldset>
+                                <fieldset id="capture">
                                     <div class="form-card">
                                         <div class="row">
-                                            <div class="col-md-8">
+                                            <div class="col-12">
                                                 <img src="./multimedia/iplanBiz.JPG" alt="iplanBiz">
-                                                <h2 class="fs-title-parrafo text-center" id="parrafo-cliente"></h2>
-                                                <br>
-                                                <br>
-                                                <h3 class="fs-second-title">Analizamos tus respuestas y te comentamos
-                                                    que:</h3>
-                                                <br>
+                                                <div style="display: flex; flex-direction: row; align-content: flex-start; align-items: flex-start;">
+                                                    <div style="flex:1">
+                                                        <br>
+                                                        <br>
+                                                        <h2 class="fs-title-parrafo text-center" id="parrafo-cliente">
+                                                        </h2>
+                                                        <br>
+                                                        <h3 class="fs-second-title">Analizamos tus respuestas y te
+                                                            comentamos
+                                                            que:</h3>
+                                                        <br>
+                                                    </div>
+                                                    <img style="height: 250px;" src="./multimedia/imagen1.JPG" alt="googleWorkspace">
+                                                </div>
+
                                                 <p class="fs-title-subparrafito">DISPOSITIVOS MÓVILES</p>
                                                 <p class="fs-title-parrafito" id="parrafo-respuesta-2"></p>
-                                                <br>
+
                                                 <br>
                                                 <p class="fs-title-subparrafito">COLABORACIÓN</p>
                                                 <p class="fs-title-parrafito" id="parrafo-respuesta-3"></p>
-                                                <br>
+
                                                 <br>
                                                 <p class="fs-title-subparrafito">ALMACENAMIENTO</p>
                                                 <p class="fs-title-parrafito" id="parrafo-respuesta-4"></p>
-                                                <br>
+
                                                 <br>
                                                 <p class="fs-title-subparrafito">SEGURIDAD</p>
                                                 <p class="fs-title-parrafito" id="parrafo-respuesta-5">Segurizá tu
@@ -341,24 +352,22 @@
                                                     privacidad más estrictos, por ejemplo, Gmail bloquea el 99.9% del
                                                     spam, el software malicioso y los vínculos peligrosos para que ni
                                                     siquiera puedan llegar a la carpeta de Recibidos.</p>
-                                                <br>
+
                                                 <br>
                                                 <p class="fs-title-parrafo">¿Querés aprender más acerca de Google
                                                     Workspace?</p>
                                                 <button type="button" class="btn btn-outline-info"
                                                     data-pregunta="enviar7" id="contactarme" value="contactar">Quiero
                                                     que me contacten</button>
+                                                <button type="button" class="btn btn-outline-info"
+                                                    data-pregunta="enviar8" id="descargar"
+                                                    value="descargar">Descargar</button>
                                                 <div id="contactado" class="class-1">
                                                     <p class="fs-title-parrafo">Muchas Gracias, pronto lo contactaremos
                                                     </p>
                                                 </div>
 
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="row justify-content-center">
-                                                    <div class="fit-image"> <img src="./multimedia/imagen1.JPG"
-                                                            class="fit-image"> </div>
-                                                </div>
+
                                             </div>
                                         </div>
                                     </div>
@@ -371,12 +380,13 @@
         </div>
     </div>
 
-    <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>
-    
+    <script type='text/javascript'
+        src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>
+
     <script type="module" src="./js/bootstrap-multi-step-form.js"></script>
     <script type="module" src="./js/main.js"></script>
 
-    
+
 </body>
 
 </html>

@@ -11,6 +11,8 @@
     "vite": "^2.7.2"
   },
   "dependencies": {
-    "firebase": "^9.6.2"
+    "firebase": "^9.6.2",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^2.5.1"
   }
 }

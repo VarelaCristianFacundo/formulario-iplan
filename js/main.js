@@ -1,6 +1,7 @@
 import { ref, set, update } from "https://www.gstatic.com/firebasejs/9.2.0/firebase-database.js"
 import { db } from "../js/firebase.js"
-import { handleDrag, validateEmail } from "../js/helpers.js"
+import { handleDrag, validateEmail, pdfOut } from "../js/helpers.js"
+
 
 $(document).ready(function () {
 
@@ -226,4 +227,22 @@ $(document).ready(function () {
     }
 
     contactarmeBtn.addEventListener('click', contactarCliente)
+
+    const descargarBtn = document.getElementById("descargar")
+
+    function descargarPdf() {
+        pdfOut(document.querySelector("#capture"),"formulario-iplan",function(){})
+        // html2canvas(document.querySelector("#capture"))
+        //     .then(canvas => {
+        //         const imgData = canvas.toDataURL('image/png');
+        //         // var doc = new jsPDF('p','mm');
+        //         // doc.addImage(imgData, 'PNG', 10, 10);
+        //         // doc.save ('formulario-iplan.pdf');
+        //     })
+
+    }
+
+    descargarBtn.addEventListener('click', descargarPdf)
+
 })
+
