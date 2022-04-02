@@ -1,7 +1,8 @@
 import { ref, set, update } from "https://www.gstatic.com/firebasejs/9.2.0/firebase-database.js"
 import { db } from "../js/firebase.js"
-import { handleDrag, validateEmail, pdfOut } from "../js/helpers.js"
-
+import { handleDrag, validateEmail } from "../js/helpers.js"
+import { jsPDF } from "jspdf"
+import html2canvas from "html2canvas"
 
 $(document).ready(function () {
 
@@ -231,19 +232,19 @@ $(document).ready(function () {
     const descargarBtn = document.getElementById("descargar")
 
     function descargarPdf() {
-        descargarBtn.classList.add('class-1')
-        pdfOut(document.querySelector("#capture"),"formulario-iplan",function(){})
-        // html2canvas(document.querySelector("#capture"))
-        //     .then(canvas => {
-        //         const imgData = canvas.toDataURL('image/png');
-        //         // var doc = new jsPDF('p','mm');
-        //         // doc.addImage(imgData, 'PNG', 10, 10);
-        //         // doc.save ('formulario-iplan.pdf');
-        //     })
-
+        html2canvas(document.querySelector("#capture"), {
+            onclone: function (documentClone) {
+                documentClone.querySelector("#capture").style.width = "1000px"
+                documentClone.querySelector("#capture-footer").classList.add('class-1')
+            }
+        })
+            .then(canvas => {
+                const pdf = new jsPDF('p', 'mm', 'a4')
+                const imgData = canvas.toDataURL('image/jpeg', 1.0)
+                pdf.addImage(imgData, 'JPEG', 10, 10, 190, 277)
+                pdf.save('formulario-iplan.pdf')
+            })
     }
 
     descargarBtn.addEventListener('click', descargarPdf)
-
 })
-
