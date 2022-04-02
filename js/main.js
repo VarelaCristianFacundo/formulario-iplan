@@ -231,6 +231,7 @@ $(document).ready(function () {
     const descargarBtn = document.getElementById("descargar")
 
     function descargarPdf() {
+        descargarBtn.classList.add('class-1')
         pdfOut(document.querySelector("#capture"),"formulario-iplan",function(){})
         // html2canvas(document.querySelector("#capture"))
         //     .then(canvas => {
