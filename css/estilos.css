@@ -6,6 +6,13 @@
 html {
     height: 99%;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* background-image: url("../multimedia/background/background-desktop.svg");
+    background-size: cover; */
+}
+
+body {
+    background-image: url("../multimedia/background/background-desktop.svg");
+    background-size: cover;
 }
 
 .container {
@@ -89,16 +96,14 @@ html {
     padding: 8px 16px;
 }
 
-#grad1 {
-    background-color: white;
-}
 #msform {
     text-align: center;
     position: relative;
+    background: transparent;
 }
 
-#msform fieldset .form-card {
-    background: white;
+#msform fieldset .form-card {    
+    background-color: white;
     border: 0 none;
     border-radius: 0px;
     box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
@@ -109,8 +114,7 @@ html {
     position: relative
 }
 
-#msform fieldset {
-    background: white;
+#msform fieldset {    
     border: 0 none;
     border-radius: 0.5rem;
     box-sizing: border-box;
@@ -210,7 +214,8 @@ select.list-dt:focus {
     z-index: 0;
     border: none;
     border-radius: 0.5rem;
-    position: relative
+    position: relative;
+    background: transparent;
 }
 
 .fs-title {
@@ -401,9 +406,6 @@ select.list-dt:focus {
     border-top-right-radius: calc(.25rem - 1px)
 }
 
-.card-block {
-    background-color: #fff !important
-}
 
 .sortable-moves {
     cursor: move;
