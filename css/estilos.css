@@ -506,3 +506,9 @@ select.list-dt:focus {
       font-size: 16px;
       text-align: left;
   }
+
+.img {
+    max-width: 200px;
+    max-height: 200px;
+    width: 100%;
+}
