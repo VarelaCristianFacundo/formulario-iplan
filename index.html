@@ -13,7 +13,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery-sortablejs@latest/jquery-sortable.js"></script>
 </head>
 
-<body oncontextmenu='return false' class='snippet-body'>
+<body class='snippet-body'>
     <div class="container-fluid" id="grad1">
         <div class="row justify-content-center mt-0">
             <div class="col-11 col-sm-9 col-md-7 col-lg-7 text-center p-0 mb-2">
@@ -23,13 +23,15 @@
                     <div class="row mt-3">
                         <div class="col-md-12 mx-0">
                             <form id="msform" name="formulario">
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-striped bg-blue progress-bar-animated"
-                                        role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div> <br>
                                 <!-- fieldsets -->
-                                <fieldset>
-                                    <div class="form-card">
+                                <div class="form-card">
+                                    <div>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped bg-blue progress-bar-animated"
+                                                role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <fieldset>
                                         <h2 class="fs-title">#1 Vuelta al trabajo</h2>
                                         <h4 class="fs-title-parrafo">
                                             ¿Cuál es la estrategia de trabajo en tu organización para el próximo año?
@@ -52,12 +54,10 @@
                                                 No lo sé aún
                                             </button>
                                         </div>
-                                    </div>
-                                    <input type="button" name="next" class="btn next action-button" value="Siguiente"
-                                        id="enviar1" disabled />
-                                </fieldset>
-                                <fieldset>
-                                    <div class="form-card">
+                                        <input type="button" name="next" class="btn next action-button"
+                                            value="Siguiente" id="enviar1" disabled />
+                                    </fieldset>
+                                    <fieldset>
                                         <h2 class="fs-title">#1 Vuelta al trabajo:</h2>
                                         <div class="radio-group">
                                             <p class="fs-title-parrafo">El trabajo ya no es sólo un lugar físico. Acorde
@@ -67,11 +67,9 @@
                                                 está reduciendo sus inversiones en espacio de oficinas”, Julio 2021.
                                             </p>
                                         </div>
-                                    </div> <input type="button" name="next" class="next action-button"
-                                        value="Siguiente" />
-                                </fieldset>
-                                <fieldset>
-                                    <div class="form-card">
+                                        <input type="button" name="next" class="next action-button" value="Siguiente" />
+                                    </fieldset>
+                                    <fieldset>
                                         <h2 class="fs-title">#2 Dispositivos móviles</h2>
                                         <h4 class="fs-title-parrafo">
                                             Los colaboradores de tu organización, ¿Pueden trabajar desde cualquier
@@ -92,12 +90,10 @@
                                                 Sí, con varias aplicaciones
                                             </button>
                                         </div>
-                                    </div>
-                                    <input type="button" name="next" class="btn next action-button" id="enviar2"
-                                        value="Siguiente" disabled />
-                                </fieldset>
-                                <fieldset>
-                                    <div class="form-card">
+                                        <input type="button" name="next" class="btn next action-button" id="enviar2"
+                                            value="Siguiente" disabled />
+                                    </fieldset>
+                                    <fieldset>
                                         <h2 class="fs-title">#2 Dispositivos móviles:</h2>
                                         <div class="radio-group">
                                             <p class="fs-title-parrafo">El 55% de los correos electrónicos se abren
@@ -105,11 +101,9 @@
                                                 dispositivo móvil. Fuente: Neetwork Business School: Mobile Now
                                                 representa el 55% de los correos electrónicos abiertos.</p>
                                         </div>
-                                    </div>
-                                    <input type="button" name="next" class="next action-button" value="Siguiente" />
-                                </fieldset>
-                                <fieldset>
-                                    <div class="form-card">
+                                        <input type="button" name="next" class="next action-button" value="Siguiente" />
+                                    </fieldset>
+                                    <fieldset>
                                         <h2 class="fs-title">#3 Almacenamiento</h2>
                                         <h4 class="fs-title-parrafo">
                                             ¿Dónde almacenas tu información?
@@ -128,26 +122,24 @@
                                                 Híbrido
                                             </button>
                                         </div>
-                                    </div>
-                                    <input type="button" name="next" class="btn next action-button" id="enviar3"
-                                        value="Siguiente" disabled />
-                                </fieldset>
-                                <fieldset>
-                                    <div class="form-card">
+                                        <input type="button" name="next" class="btn next action-button" id="enviar3"
+                                            value="Siguiente" disabled />
+                                    </fieldset>
+                                    <fieldset>
                                         <h2 class="fs-title">#3 Almacenamiento:</h2>
                                         <div class="radio-group">
-                                            <p class="fs-title-parrafo">Según Forbes Argentina, la pandemia aceleró como
+                                            <p class="fs-title-parrafo">Según Forbes Argentina, la pandemia aceleró
+                                                como
                                                 nunca la determinación
                                                 de las organizaciones de apostar a Cloud. Desde servicios de
                                                 procesamiento y almacenamiento hasta aplicaciones a medida.
-                                                Fuente: Forbes: Por qué cada vez más empresas migran sus negocios a la
+                                                Fuente: Forbes: Por qué cada vez más empresas migran sus negocios a
+                                                la
                                                 nube, Diciembre 2020.</p>
                                         </div>
-                                    </div> <input type="button" name="next" class="next action-button"
-                                        value="Siguiente" />
-                                </fieldset>
-                                <fieldset>
-                                    <div class="form-card">
+                                        <input type="button" name="next" class="next action-button" value="Siguiente" />
+                                    </fieldset>
+                                    <fieldset>
                                         <h2 class="fs-title">#4 Colaboración</h2>
                                         <h4 class="fs-title-parrafo">
                                             ¿Cuál es la mejor descripción para las prácticas de colaboración de tu
@@ -172,16 +164,15 @@
                                             <button type="button" class="btn btn-outline-info btn-option"
                                                 data-pregunta="enviar4"
                                                 value="Estamos evaluando soluciones de productividad y colaboración en la nube">
-                                                Estamos evaluando soluciones de productividad y colaboración en la nube
+                                                Estamos evaluando soluciones de productividad y colaboración en la
+                                                nube
                                             </button>
                                         </div>
-                                    </div>
-                                    <input type="button" name="next" class="btn next action-button" id="enviar4"
-                                        value="Siguiente" disabled />
-                                </fieldset>
+                                        <input type="button" name="next" class="btn next action-button" id="enviar4"
+                                            value="Siguiente" disabled />
+                                    </fieldset>
 
-                                <fieldset>
-                                    <div class="form-card">
+                                    <fieldset>
                                         <h2 class="fs-title">#4 Colaboración:</h2>
                                         <div class="radio-group">
                                             <p class="fs-title-parrafo">El 60% de los empleados se sienten menos
@@ -189,12 +180,10 @@
                                                 desde que trabajan remotamente.
                                                 Fuente: Microsoft: The future of work, Julio 2020.</p>
                                         </div>
-                                    </div> <input type="button" name="next" class="next action-button"
-                                        value="Siguiente" />
-                                </fieldset>
+                                        <input type="button" name="next" class="next action-button" value="Siguiente" />
+                                    </fieldset>
 
-                                <fieldset>
-                                    <div class="form-card">
+                                    <fieldset>
                                         <h2 class="fs-title">#5 Seguridad</h2>
                                         <h4 class="fs-title-parrafo">
                                             ¿Cómo proteges a las personas y a la información de tu organización?
@@ -230,33 +219,33 @@
                                                 <span class="checkmark"></span>
                                             </label>
                                             <label class="container fs-parrafo-checbox">
-                                                Identidad y acceso basado en el contexto de los usuarios (dispositivo,
+                                                Identidad y acceso basado en el contexto de los usuarios
+                                                (dispositivo,
                                                 usuario, ubicación e IP)
                                                 <input type="checkbox" class="check-option" name="preg5"
                                                     value="Identidad y acceso basado en el contexto de los usuarios (dispositivo, usuario, ubicación e IP)">
                                                 <span class="checkmark"></span>
                                             </label>
                                         </div>
-                                    </div>
-                                    <input type="button" name="next" class="btn next action-button" id="enviar5"
-                                        value="Siguiente" disabled />
-                                </fieldset>
+                                        <input type="button" name="next" class="btn next action-button" id="enviar5"
+                                            value="Siguiente" disabled />
+                                    </fieldset>
 
-                                <fieldset>
-                                    <div class="form-card">
+                                    <fieldset>
                                         <h2 class="fs-title">#5 Seguridad:</h2>
                                         <div class="radio-group">
-                                            <p class="fs-title-parrafo">Argentina sufre más de 124 millones de intentos
+                                            <p class="fs-title-parrafo">Argentina sufre más de 124 millones de
+                                                intentos
                                                 de ciberataques desde inicios de 2021
-                                                Fuente: Argentina sufre más de 124 millones de intentos de ciberataques
+                                                Fuente: Argentina sufre más de 124 millones de intentos de
+                                                ciberataques
                                                 desde inicios de 2021, iProUP, Junio 2021</p>
                                         </div>
-                                    </div> <input type="button" name="next" class="btn next action-button"
-                                        value="Siguiente" />
-                                </fieldset>
+                                        <input type="button" name="next" class="btn next action-button"
+                                            value="Siguiente" />
+                                    </fieldset>
 
-                                <fieldset>
-                                    <div class="form-card">
+                                    <fieldset>
                                         <h2 class="fs-title">#6 Ordená
                                         </h2>
                                         <div class="page-content page-container" id="page-content">
@@ -264,7 +253,8 @@
                                                 <div class="row container d-flex justify-content-center">
                                                     <div class="col-lg-12 col-xl-12">
                                                         <h5 class="card-header-text fs-title-parrafo">
-                                                            Arrastrá y ordená en términos de importancia los desafíos
+                                                            Arrastrá y ordená en términos de importancia los
+                                                            desafíos
                                                             que tu organización quiere resolver:
                                                         </h5>
                                                         <div id="draggable-list" class="list-group col">
@@ -281,11 +271,13 @@
                                                             </div>
                                                             <div data-id="Flexibilizar el trabajo en oficina con trabajo remoto"
                                                                 class="list-group-item">
-                                                                Flexibilizar el trabajo en oficina con trabajo remoto
+                                                                Flexibilizar el trabajo en oficina con trabajo
+                                                                remoto
                                                             </div>
                                                             <div data-id="Migrar el almacenamiento de mi file server on premise a la nube"
                                                                 class="list-group-item">
-                                                                Migrar el almacenamiento de mi file server on premise a
+                                                                Migrar el almacenamiento de mi file server on
+                                                                premise a
                                                                 la nube
                                                             </div>
                                                         </div>
@@ -293,12 +285,11 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div> <input type="button" name="next" class="btn next action-button" id="enviar6"
-                                        value="Siguiente" />
-                                </fieldset>
+                                        <input type="button" name="next" class="btn next action-button" id="enviar6"
+                                            value="Siguiente" />
+                                    </fieldset>
 
-                                <fieldset>
-                                    <div class="form-card">
+                                    <fieldset>
                                         <h2 class="fs-title">Información del usuario</h2>
                                         <input type="text" placeholder="Nombre" id="nombre" />
                                         <input type="text" placeholder="Apellido" id="apellido" />
@@ -306,12 +297,10 @@
                                         <input type="text" placeholder="Cargo laboral" id="cargolaboral" />
                                         <input type="email" placeholder="Email" id="email" />
                                         <input type="number" placeholder="Celular" id="celular" />
-                                    </div>
-                                    <input type="button" name="next" class="btn next action-button" value="Siguiente"
-                                        id="insBtn" disabled />
-                                </fieldset>
-                                <fieldset id="capture">
-                                    <div class="form-card">
+                                        <input type="button" name="next" class="btn next action-button"
+                                            value="Siguiente" id="insBtn" disabled />
+                                    </fieldset>
+                                    <fieldset id="capture">
                                         <div class="row">
                                             <div class="col-12">
                                                 <img src="./multimedia/iplanBiz.JPG" alt="iplanBiz">
@@ -346,18 +335,25 @@
                                                 <br>
                                                 <p class="fs-title-subparrafito">SEGURIDAD</p>
                                                 <p class="fs-title-parrafito" id="parrafo-respuesta-5">Segurizá tu
-                                                    organización de punta a punta con Google Workspace. Desde la Consola
-                                                    de administración creá reglas de seguridad para los usuarios, para
-                                                    prevenir la pérdida y filtración de la información compartida, para
-                                                    los dispositivos móviles y puntos de conexión. Las aplicaciones de
+                                                    organización de punta a punta con Google Workspace. Desde la
+                                                    Consola
+                                                    de administración creá reglas de seguridad para los usuarios,
+                                                    para
+                                                    prevenir la pérdida y filtración de la información compartida,
+                                                    para
+                                                    los dispositivos móviles y puntos de conexión. Las aplicaciones
+                                                    de
                                                     Google Workspace cuentan con los estándares de seguridad y
-                                                    privacidad más estrictos, por ejemplo, Gmail bloquea el 99.9% del
-                                                    spam, el software malicioso y los vínculos peligrosos para que ni
+                                                    privacidad más estrictos, por ejemplo, Gmail bloquea el 99.9%
+                                                    del
+                                                    spam, el software malicioso y los vínculos peligrosos para que
+                                                    ni
                                                     siquiera puedan llegar a la carpeta de Recibidos.</p>
 
                                                 <div id="capture-footer">
                                                     <br>
-                                                    <p class="fs-title-parrafo">¿Querés aprender más acerca de Google
+                                                    <p class="fs-title-parrafo">¿Querés aprender más acerca de
+                                                        Google
                                                         Workspace?</p>
                                                     <div id="contactado" class="class-1">
                                                         <p class="fs-title-parrafo">Muchas Gracias, pronto lo
@@ -377,8 +373,8 @@
 
                                             </div>
                                         </div>
-                                    </div>
-                                </fieldset>
+                                    </fieldset>
+                                </div>
                             </form>
                         </div>
                     </div>
