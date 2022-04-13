@@ -30,22 +30,22 @@ $(document).ready(function () {
     }
 
     botonEnviar1.onclick = () => {
-        responses.push(respuesta)
+        responses[0] = respuesta
         console.log(responses)
     }
 
     botonEnviar2.onclick = () => {
-        responses.push(respuesta)
+        responses[1] = respuesta
         console.log(responses)
     }
 
     botonEnviar3.onclick = () => {
-        responses.push(respuesta)
+        responses[2] = respuesta
         console.log(responses)
     }
 
     botonEnviar4.onclick = () => {
-        responses.push(respuesta)
+        responses[3] = respuesta
         console.log(responses)
     }
 
