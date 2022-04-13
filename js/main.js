@@ -161,13 +161,13 @@ $(document).ready(function () {
 
         switch (responses[1]) {
             case "Sí, pero sólo utilizar el correo electrónico":
-                document.getElementById("parrafo-respuesta-2").innerText = "Permití que además puedan compartir archivos, editar documentos, chatear y mantener videollamadas en tiempo real desde cualquier dispositivo y lugar, sin depender de estar en la oficina para desarrollar las tareas diarias."
+                document.getElementById("parrafo-respuesta-2").innerText = "Podés sumar más aplicaciones mobiles para colaborar de manera completa y flexible."
                 break
             case "No, sólo desde la computadora laboral":
-                document.getElementById("parrafo-respuesta-2").innerText = "Las formas de trabajar cambiaron. La actualidad exige la posibilidad de poder trabajar desde cualquier dispositivo y lugar para aumentar la productividad o responder a cuestiones urgentes. Todas las aplicaciones de Google Workspace son multidispositivos y fáciles de usar: con tan sólo la aplicación de Gmail en tu teléfono móvil podes enviar y recibir correos electrónicos, chatear individual o grupalmente y mantener videollamadas por Meet."
+                document.getElementById("parrafo-respuesta-2").innerText = "Brindá mayor flexibilidad para colaborar sin perder seguridad sumando aplicaciones mobiles."
                 break
             case "Sí, con varias aplicaciones":
-                document.getElementById("parrafo-respuesta-2").innerText = "Muy bien! Con las aplicaciones de Google Workspace podes mejorar la experiencia de tus colaboradores ofreciéndoles una interfaz conocida, fácil de aprender y con aplicaciones integradas entre sí."
+                document.getElementById("parrafo-respuesta-2").innerText = "Podés continuar mejorando la productividad de tus equipos colaborando de manera completa y flexible."
                 break
             default:
                 break
@@ -175,13 +175,13 @@ $(document).ready(function () {
 
         switch (responses[2]) {
             case "En la nube":
-                document.getElementById("parrafo-respuesta-3").innerText = "Migrá tus archivos a la nube de Google y aprovechá al máximo la integración con el ecosistema de Google Workspace. IPLAN te ayuda con la migración de todos tus archivos."
+                document.getElementById("parrafo-respuesta-3").innerText = "Podemos ayudarte con la migración de todos tus archivos."
                 break
             case "File server on premise":
-                document.getElementById("parrafo-respuesta-3").innerText = "Reducí costos de infraestructura y mitigá riesgos sobre tu información almacenándola en la nube de Google, la más segura del mercado. Evitá que se pierda información con Unidades compartidas donde el equipo es dueño de los archivos y no una persona. IPLAN te ayuda con la migración de todos tus archivos."
+                document.getElementById("parrafo-respuesta-3").innerText = "Podés reducir costos de infraestructura."
                 break
             case "Híbrido":
-                document.getElementById("parrafo-respuesta-3").innerText = "Ahorrá el costo para renovar y mantener esa infraestructura y centralizá todo en la nube de Google, la más segura del mercado. Evitá que se pierda información con Unidades compartidas donde el equipo es dueño de los archivos y no una persona. IPLAN te ayuda con la migración de todos tus archivos."
+                document.getElementById("parrafo-respuesta-3").innerText = "Podés reducir costos de infraestructura."
                 break
             default:
                 break
@@ -189,16 +189,16 @@ $(document).ready(function () {
 
         switch (responses[3]) {
             case "Difícilmente colaboramos, particularmente lo hacen algunos equipos":
-                document.getElementById("parrafo-respuesta-4").innerText = "Democratizá la colaboración para toda la organización ofreciendo las mismas herramientas con la misma experiencia e interfaz para todas las personas."
+                document.getElementById("parrafo-respuesta-4").innerText = "Podés aumentar la productividad de todos tus equipos."
                 break
             case "Las personas están confundidas sobre qué aplicaciones usar":
-                document.getElementById("parrafo-respuesta-4").innerText = "Unificá y simplificá la colaboración ofreciéndole a toda la organización las herramientas de Google Workspace, creando Espacios de trabajo en Chat para comunicar y asignar tareas, Unidades compartidas en Drive, intranets con Sites, editando documentos de texto, hojas de cálculo y presentaciones en tiempo real y mucho más."
+                document.getElementById("parrafo-respuesta-4").innerText = "Podés unificar y simplicar la colaboración."
                 break
             case "Nuestros equipos colaboran efectivamente con aplicaciones en la nube":
-                document.getElementById("parrafo-respuesta-4").innerText = "Perfecto! Reducí costos de licenciamiento de aplicaciones de terceros y utilizá las de Google Workspace, ofreciendo mejores funcionalidades y una interfaz unificada con aplicaciones integradas."
+                document.getElementById("parrafo-respuesta-4").innerText = "Podés seguir mejorando la productividad de tus equipos."
                 break
             case "Estamos evaluando soluciones de productividad y colaboración en la nube":
-                document.getElementById("parrafo-respuesta-4").innerText = "Te encontramos en el camino correcto: Google Workspace ofrece una solución completa de aplicaciones de productividad y colaboración en la nube, con las mejores funcionalidades para crear el espacio de trabajo que las personas de tu organización necesitan."
+                document.getElementById("parrafo-respuesta-4").innerText = "Te encontramos en el camino correcto."
                 break
             default:
                 break
