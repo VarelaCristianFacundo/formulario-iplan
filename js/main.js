@@ -232,16 +232,25 @@ $(document).ready(function () {
     const descargarBtn = document.getElementById("descargar")
 
     function descargarPdf() {
-        html2canvas(document.querySelector("#capture"), {
+        const contenidoPromesa = html2canvas(document.querySelector("#capture"), {
             onclone: function (documentClone) {
-                documentClone.querySelector("#capture").style.width = "1000px"
+                documentClone.querySelector("#capture").style.width = "690px"
                 documentClone.querySelector("#capture-footer").classList.add('class-1')
             }
         })
-            .then(canvas => {
+        const encabezadoPromesa = html2canvas(document.querySelector("#capture-header"), {
+            onclone: function (documentClone) {
+                documentClone.querySelector("#capture-header").style.width = "695px"
+            }
+        })
+
+        Promise.all([contenidoPromesa, encabezadoPromesa])
+            .then(([canvas, header]) => {
                 const pdf = new jsPDF('p', 'mm', 'a4')
                 const imgData = canvas.toDataURL('image/jpeg', 1.0)
-                pdf.addImage(imgData, 'JPEG', 10, 10, 190, 277)
+                const imgHeader = header.toDataURL('image/jpeg', 1.0)
+                pdf.addImage(imgHeader, 'JPEG', 10, 10, 190, 23)
+                pdf.addImage(imgData, 'JPEG', 10, 40, 190, 164)
                 pdf.save('formulario-iplan.pdf')
             })
     }
