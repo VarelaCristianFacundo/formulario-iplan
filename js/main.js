@@ -236,10 +236,10 @@ $(document).ready(function () {
             onclone: function (documentClone) {
                 documentClone.querySelector("#capture").style.width = "690px"
                 documentClone.querySelector("#capture-footer").classList.add('class-1')
-                documentClone.querySelector("#content-header").classList.add('d-flex')
+                documentClone.querySelector("#capture-header").classList.add('d-flex')
             }
         })
-        const encabezadoPromesa = html2canvas(document.querySelector("#capture-header"), {
+        const encabezadoPromesa = html2canvas(document.querySelector("#header"), {
             onclone: function (documentClone) {
                 documentClone.querySelector("#header").style.width = "695px"
             }
