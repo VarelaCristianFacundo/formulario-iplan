@@ -236,11 +236,12 @@ $(document).ready(function () {
             onclone: function (documentClone) {
                 documentClone.querySelector("#capture").style.width = "690px"
                 documentClone.querySelector("#capture-footer").classList.add('class-1')
+                documentClone.querySelector("#content-header").classList.add('d-flex')
             }
         })
         const encabezadoPromesa = html2canvas(document.querySelector("#capture-header"), {
             onclone: function (documentClone) {
-                documentClone.querySelector("#capture-header").style.width = "695px"
+                documentClone.querySelector("#header").style.width = "695px"
             }
         })
 

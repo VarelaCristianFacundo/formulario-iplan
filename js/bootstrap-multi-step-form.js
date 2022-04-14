@@ -65,9 +65,9 @@ $(document).ready(function () {
   function setProgressBar(curStep) {
 
     if(curStep == 0) {
-      $("#capture-header").hide();
+      $("#header").hide();
     } else {
-      $("#capture-header").show();
+      $("#header").show();
     }
 
     var percent = parseFloat(100 / (steps - 1)) * curStep;
