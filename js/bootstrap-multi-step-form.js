@@ -2,7 +2,7 @@ $(document).ready(function () {
 
   var current_fs, next_fs, previous_fs; //fieldsets
   var opacity;
-  var current = 1;
+  var current = 0;
   var steps = $("fieldset").length;
 
   setProgressBar(current);
@@ -63,7 +63,14 @@ $(document).ready(function () {
   });
 
   function setProgressBar(curStep) {
-    var percent = parseFloat(100 / steps) * curStep;
+
+    if(curStep == 0) {
+      $("#capture-header").hide();
+    } else {
+      $("#capture-header").show();
+    }
+
+    var percent = parseFloat(100 / (steps - 1)) * curStep;
     percent = percent.toFixed();
     $(".progress-bar")
       .css("width", percent + "%")
