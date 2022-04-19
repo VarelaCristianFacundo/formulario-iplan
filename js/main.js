@@ -244,9 +244,9 @@ $(document).ready(function () {
     function descargarPdf() {
         const contenidoPromesa = html2canvas(document.querySelector("#capture"), {
             onclone: function (documentClone) {
-                documentClone.querySelector("#capture").style.width = "690px"
                 documentClone.querySelector("#capture-footer").classList.add('class-1')
                 documentClone.querySelector("#capture-header").classList.add('d-flex')
+                documentClone.querySelector("#capture").style.width = "690px"
             }
         })
         const encabezadoPromesa = html2canvas(document.querySelector("#header"), {
@@ -258,10 +258,26 @@ $(document).ready(function () {
         Promise.all([contenidoPromesa, encabezadoPromesa])
             .then(([canvas, header]) => {
                 const pdf = new jsPDF('p', 'mm', 'a4')
-                const imgData = canvas.toDataURL('image/jpeg', 1.0)
+
                 const imgHeader = header.toDataURL('image/jpeg', 1.0)
                 pdf.addImage(imgHeader, 'JPEG', 10, 10, 190, 23)
-                pdf.addImage(imgData, 'JPEG', 10, 40, 190, 200)
+                
+                const imgData = canvas.toDataURL('image/jpeg', 1.0)
+                
+                let marginX = 10
+                const marginY = 40
+                let width = 190
+                let height = Math.round(width * canvas.height / canvas.width) + marginY
+                const maxHeight = 297 - 10 - 10 - marginY
+
+                if (height > maxHeight) {
+                    const old_width = width
+                    width = maxHeight * old_width / height
+                    marginX = (old_width - width) / 2 + marginX
+                    height = maxHeight
+                }
+
+                pdf.addImage(imgData, 'JPEG', marginX, marginY, width, height)
                 pdf.save('formulario-iplan.pdf')
             })
     }
