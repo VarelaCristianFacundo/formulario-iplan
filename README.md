@@ -49,18 +49,44 @@ npm install
 
 ## Estructura de Archivos
 
-Varela1/
-├── www/
-│ ├── css/ # Archivos CSS generados
-│ ├── img/ # Imágenes usadas en la aplicación
-│ ├── js/ # Código JavaScript de la aplicación
-│ ├── lib/ # Bibliotecas de Ionic y AngularJS
-│ ├── templates/ # Plantillas HTML para las pestañas
-│ └── index.html # Página principal de la aplicación
-├── scss/ # Archivos SCSS de estilo
-├── resources/ # Iconos y splash screens
-├── gulpfile.js # Configuración de tareas de Gulp
-└── package.json # Configuración del proyecto y dependencias
+```
+└── 📁formulario-iplan    
+    └── 📁css
+        └── estilos.css
+    └── 📁js
+        └── bootstrap-multi-step-form.js
+        └── firebase.js
+        └── helpers.js
+        └── main.js
+    └── 📁multimedia
+        └── 📁background
+            └── background-desktop.jpg
+            └── background-mobile.jpg
+        └── 📁imagenescard
+            └── imagen1.png
+            └── imagen1.svg
+            └── imagen10.svg
+            └── imagen11.svg
+            └── imagen12.svg
+            └── imagen13.svg
+            └── imagen2.svg
+            └── imagen3.png
+            └── imagen4.svg
+            └── imagen5.svg
+            └── imagen6.svg
+            └── imagen7.svg
+            └── imagen8.svg
+            └── imagen9.svg
+        └── logoGoogle.png
+        └── logoIPLANbiz.png
+    └── .gitignore
+    └── firebase.json
+    └── index.html
+    └── package-lock.json
+    └── package.json
+    └── README.md
+    └── vite.config.js
+```
 
 ## Uso de la Aplicación
 
