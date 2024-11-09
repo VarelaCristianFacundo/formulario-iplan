@@ -1,6 +1,6 @@
 export default {
   base: '/',
   build: {
-    chunkSizeWarningLimit: 1000
-  }
+    chunkSizeWarningLimit: 1000,
+  },
 }
